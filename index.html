@@ -4,28 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="main-container">
-      <nav>
-        <div id="logo"></div>
-        <div id="main-nav"></div>
-        <div id="additional-nav"></div>
-      </nav>
+    <main>
+      <div id="projects"></div>
+      <div id="announcements"></div>
+      <div id="trending"></div>
+    </main>
 
-      <header>
-        <div id="search"></div>
-        <div id="account"></div>
-        <div id="greeting"></div>
-        <div id="controls"></div>
-      </header>
+    <header>
+      <div id="search"></div>
+      <div id="account"></div>
+      <div id="greeting"></div>
+      <div id="controls"></div>
+    </header>
 
-      <main>
-        <div id="projects"></div>
-        <div id="announcements"></div>
-        <div id="trending"></div>
-      </main>
-    </div>
+    <nav>
+      <div id="nav-container">
+        <div id="logo" class="nav-element">
+          <img
+            src="icons/view-dashboard.svg"
+            alt="Dashboard icon"
+            id="logo-icon"
+          />
+          <span id="logo-text">Dashboard</span>
+        </div>
+        <div id="main-nav" class="nav-button-container">
+          <div class="nav-element">
+            <img src="icons/home.svg" alt="Home icon" class="icon" /><span
+              >Home</span
+            >
+          </div>
+          <div class="nav-element">
+            <img
+              src="icons/card-account-details-outline.svg"
+              alt="Profile icon"
+              class="icon"
+            /><span>Profile</span>
+          </div>
+          <div class="nav-element">
+            <img
+              src="icons/message-reply.svg"
+              alt="Messages icon"
+              class="icon"
+            /><span>Messages</span>
+          </div>
+          <div class="nav-element">
+            <img
+              src="icons/clock-time-three.svg"
+              alt="History icon"
+              class="icon"
+            /><span>History</span>
+          </div>
+          <div class="nav-element">
+            <img
+              src="icons/note-multiple.svg"
+              alt="Tasks icon"
+              class="icon"
+            /><span>Tasks</span>
+          </div>
+          <div class="nav-element">
+            <img
+              src="icons/account-group.svg"
+              alt="Communities icon"
+              class="icon"
+            /><span>Communities</span>
+          </div>
+        </div>
+        <div id="additional-nav" class="nav-button-container">
+          <div class="nav-element">
+            <img src="icons/cog.svg" alt="Settings icon" class="icon" /><span
+              >Settings</span
+            >
+          </div>
+          <div class="nav-element">
+            <img
+              src="icons/help-box.svg"
+              alt="Support icon"
+              class="icon"
+            /><span>Support</span>
+          </div>
+          <div class="nav-element">
+            <img
+              src="icons/shield-check.svg"
+              alt="Privacy icon"
+              class="icon"
+            /><span>Privacy</span>
+          </div>
+        </div>
+      </div>
+    </nav>
   </body>
 </html>
